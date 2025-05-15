@@ -1,5 +1,5 @@
 #pragma once
-#include "D:\Data\code_doc\AI_model_building\Multi-layer_perceptron\Core.h"
+#include "Core.h"
 
 typedef struct {
     int nodes;
