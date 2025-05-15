@@ -15,7 +15,7 @@ int main() {
     scaler_transform(test_ds->x, NULL, test_ds->samples, test_ds->features, scaler, "Standard_scaler");
     free_scaler(scaler, "Standard_scaler");
 
-    MLP* model = new_model((int[]) {ds->samples, ds->features}, 
+    MLP* model = new_sequential_model((int[]) {ds->samples, ds->features}, 
                             (Keras_layer*[]){&(Keras_layer){&(Dense){16, "relu"}, NULL}, 
                                             &(Keras_layer){NULL, &(Dropout){0.2}},
                                             &(Keras_layer){&(Dense){8, "relu"}, NULL}, 
