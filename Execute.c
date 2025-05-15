@@ -1,7 +1,7 @@
 #include "Core.h"
 
 int main() {
-    char file[] = "D:\\Data\\archive1\\flag.csv";
+    char file[] = "flag.csv";
     Data_Frame* df = read_csv(file, 1000, ",");
     Dataset_2* full_ds = trans_dframe_to_dset2(df, "t");
     Dataset_2* ds = (Dataset_2*)malloc(sizeof(Dataset_2));
