@@ -187,7 +187,7 @@ void free_mlp_model(MLP* model) {
     free(model->num_units);
     free(model);
 }
-MLP* new_model(int* input_shape, Keras_layer** layers) {
+MLP* new_sequential_model(int* input_shape, Keras_layer** layers) {
     int i, num_layers = 0, dropout = 0;
     for (i = 0; layers[i]; i++) {
         if (layers[i]->dense) num_layers++;
