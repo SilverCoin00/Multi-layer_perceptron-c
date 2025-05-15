@@ -1,6 +1,6 @@
 #pragma once
-#include "D:\Data\code_doc\AI_model_building\Pandas_&_Numpy.c"
-#include "D:\Data\code_doc\AI_model_building\Sklearn.c"
+#include "Pandas_&_Numpy.c"
+#include "Sklearn.c"
 
 typedef struct Dataset_2 {
 	float** x;
